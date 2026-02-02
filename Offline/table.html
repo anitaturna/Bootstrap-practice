@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <table class="table table-striped">
+            <tr class="table-primary">
+                <th>ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>Actoins</th>
+
+            </tr>
+
+            <tr class="table-success">
+                <td>124</td>
+                <td>Fulina</td>
+                <td>Computer</td>
+                <td>018xxxxx</td>
+                <td>Marathi</td>
+                <td>
+                    <button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Edit"><i class="bi bi-pencil-fill"></i></button>
+                    <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="View"><i class="bi bi-eye-fill"></i></button>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Delate"><i class="bi bi-archive-fill"></i></button>
+                </td>
+            </tr>
+
+            <tr class="table-danger">
+                <th>125</th>
+                <th>Afra</th>
+                <th>Civil</th>
+                <th>018xxxxx</th>
+                <th>Piruj</th>
+                <th> <button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Edit"><i class="bi bi-pencil-fill"></i></button>
+                    <button type="button" class="btn btn-info"><i class="bi bi-eye-fill"></i></button>
+                    <button type="button" class="btn btn-danger"><i class="bi bi-archive-fill"></i></button>
+                </th>
+            </tr>
+
+            <tr class="table-warning">
+                <td>126</td>
+                <td>Rifa</td>
+                <td>AutoMation</td>
+                <td>018xxxxx</td>
+                <td>Doyaganj</td>
+                <td> <button type="button" class="btn btn-success"><i class="bi bi-pencil-fill"></i></button>
+                    <button type="button" class="btn btn-info"><i class="bi bi-eye-fill"></i></button>
+                    <button type="button" class="btn btn-danger"><i class="bi bi-archive-fill"></i></button>
+                </td>
+            </tr>
+
+            <tr class="table-info">
+                <th>127</th>
+                <th>HIra</th>
+                <th>Civil</th>
+                <th>018xxxxx</th>
+                <th>simri</th>
+                <th> <button type="button" class="btn btn-success"><i class="bi bi-pencil-fill"></i></button>
+                    <button type="button" class="btn btn-info"><i class="bi bi-eye-fill"></i></button>
+                    <button type="button" class="btn btn-danger"><i class="bi bi-archive-fill"></i></button>
+                </th>
+            </tr>
+
+        </table>
+    </div>
+
+
+   <script src="./bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>
