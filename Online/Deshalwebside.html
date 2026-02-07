@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deshal-page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <style>
+      .navbar-bottom-shadow {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+      }
+
+      .category-card {
+        overflow: hidden;
+      }
+
+      .category-content {
+        z-index: 2;
+      }
+
+      .category-title {
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+        margin-bottom: 8px;
+      }
+      .icon-fix {
+        font-size: 32px;
+        line-height: 32px;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white navbar-bottom-shadow sticky">
+      <div class="container-fluid">
+        <!-- Left Icons -->
+        <div class="d-flex align-items-center">
+          <i class="bi bi-list text-dark icon-fix me-2"></i>
+          <i class="bi bi-geo-alt-fill text-dark icon-fix"></i>
+        </div>
+
+        <!-- Center Logo -->
+        <a class="navbar-brand mx-auto" href="#">
+          <img
+            src="pictures/DeshalMain.png"
+            alt=""
+            style="width: 80px; height: 59px"
+          />
+        </a>
+
+        <!-- Right Icons -->
+        <div class="d-flex align-items-center">
+          <button class="btn btn-link text-dark">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              ></path>
+            </svg>
+          </button>
+
+          <a
+            class="btn btn-link text-dark d-none d-sm-inline-block"
+            href="/profile?tab=4"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+              ></path>
+            </svg>
+          </a>
+
+          <button class="btn btn-link text-dark">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+              ></path>
+            </svg>
+          </button>
+
+          <button class="btn btn-link text-dark">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <!-- <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li> -->
+          </ul>
+          <!-- <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+        </div>
+      </div>
+    </nav>
+
+    <div>
+      <img
+        style="width: 100%; height: auto"
+        src="pictures/Deshal-cover1.jpeg"
+        alt=""
+      />
+    </div>
+
+    <div class="row" style="padding: 20px">
+      <!-- Card 1 -->
+      <div class="col-4">
+        <div class="category-card position-relative text-center">
+          <div
+            class="category-content position-absolute bottom-0 start-50 translate-middle-x mb-3"
+          >
+            <h5 class="category-title">LUNGI</h5>
+            <a href="#" class="btn btn-primary btn-sm">View Products</a>
+          </div>
+          <img
+            src="pictures/digital-art-isolated-house (1).jpg"
+            class="img-fluid w-100"
+            alt="category"
+          />
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-4">
+        <div class="card text-bg-dark">
+          <img
+            src="pictures/digital-art-isolated-house (1).jpg"
+            class="card-img"
+            alt="..."
+          />
+          <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below.
+            </p>
+            <p class="card-text">
+              <small>Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-4">
+        <div class="card text-bg-dark">
+          <img
+            src="pictures/digital-art-isolated-house (1).jpg"
+            class="card-img"
+            alt="..."
+          />
+          <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below.
+            </p>
+            <p class="card-text">
+              <small>Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
