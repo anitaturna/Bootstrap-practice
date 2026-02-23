@@ -1,0 +1,44 @@
+ .navbar-bottom-shadow {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+      }
+
+      .category-card {
+        overflow: hidden;
+      }
+
+      .category-content {
+        z-index: 2;
+      }
+
+      .category-title {
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+        margin-bottom: 8px;
+      }
+      .icon-fix {
+        font-size: 32px;
+        line-height: 32px;
+        vertical-align: middle;
+      }
+
+      .item:hover {
+  color: black;
+  font-weight: 850;
+  font-family: Poppins, sans-serif;
+}
+.custom-navbar {
+  border-bottom: 2px solid #050505;
+  height: 60px;
+  padding: 0px !important;
+  /* position: sticky; */
+  top: 0;
+  z-index: 1050;
+  
+}
+
+.custom-navbar .navbar-brand img {
+  height: 60px;   /* logo ছোট করলে সুন্দর দেখাবে */
+  width: auto;
+}
