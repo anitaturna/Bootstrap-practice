@@ -1,22 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>women-part</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deshal-Women-page</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
     />
-
+    <link rel="stylesheet" href="deshal-style.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
-</head>
-<body>
-    
-        <div class="sticky-top">
+
+    <style>
+      .carousel-indicators [data-bs-target] {
+        width: 12px;        /* গোল করার জন্য equal width & height */
+        height: 12px;
+        border-radius: 50%; /* circle বানাবে */
+        background-color: #000; /* color */
+        opacity: 0.5;
+      }
+
+      .carousel-indicators .active {
+        opacity: 1;
+        background-color: #000; /* active color */
+      }
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        filter: invert(1); /* সাদা → কালো */
+      }
+      .video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+
+.video-background iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+      
+      .navbar-bottom-shadow {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+      }
+
+      .category-card {
+        overflow: hidden;
+      }
+
+      .category-content {
+        z-index: 2;
+      }
+
+      .category-title {
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+        margin-bottom: 8px;
+      }
+      .icon-fix {
+        font-size: 32px;
+        line-height: 32px;
+        vertical-align: middle;
+      }
+
+      .item:hover {
+  color: black;
+  font-weight: 850;
+  font-family: Poppins, sans-serif;
+}
+.custom-navbar {
+  border-bottom: 2px solid #050505;
+  height: 60px;
+  padding: 0px !important;
+  /* position: sticky; */
+  top: 0;
+  z-index: 1050;
+  
+}
+
+.custom-navbar .navbar-brand img {
+  height: 60px;   /* logo ছোট করলে সুন্দর দেখাবে */
+  width: auto;
+}
+
+
+    </style>
+  </head>
+
+  <body>
+    <div class="sticky-top">
 
       <!-- first nav e icons -->
       <nav class="navbar navbar-expand-lg bg-white navbar-bottom-shadow border-bottom custom-navbar">
@@ -30,7 +111,7 @@
           </div>
           
           <!-- Center Logo -->
-          <a class="navbar-brand mx-auto" href="#">
+          <a class="navbar-brand mx-auto" href="Deshalwebside.html">
             <img
             src="pictures/DeshalMain.png"
             alt=""
@@ -135,63 +216,413 @@
         >
         <span class="navbar-toggler-icon"></span>
       </button>
-
-
-      <!-- 1st navber part (women, men,...) -->
-
+      
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown position-static">
-                <a class="nav-link dropdown-toggle  item " href="#" 
-                data-bs-toggle="dropdown">
-                Women
-                </a>
-            </li> 
-            
-            <li class="nav-item dropdown position-static">
-                <a class="nav-link dropdown-toggle fw-bold" data-bs-toggle="dropdown" href="#">Men</a>
-            </li>
-            <li class="nav-item dropdown position-static">
+            <a class="nav-link dropdown-toggle  item " href="desal-women-part.html" 
+            data-bs-toggle="dropdown">
+            Women
+          </a>
+          
+          <!-- Mega Menu -->
+          <div class="dropdown-menu w-100 mt-0 border-0 shadow" style="text-decoration: none;">
+            <div class="container py-4">
+              <div class="row">
+                
+                <!-- Column 1 -->
+                          <div class="col-md-4">
+                            <h4 class="text-danger fw-bold"><a href="https://www.deshal.net/women/saree" class="text-danger fw-bold" style="text-decoration: none;">Saree </a></h4>
+                            <ul style="list-style-type: none;" > <li> <a class="dropdown-item" href="#">Moslin</a></li>
+                              <li><a class="dropdown-item" href="#">Silk</a></li>
+                              <li><a class="dropdown-item" href="#">Jamdani</a></li>
+                            <li><a class="dropdown-item" href="#">Katan</a></li>
+                            <li><a class="dropdown-item" href="#">Hand Embroidery</a> 
+                              <ul> 
+                                  <li><a class="dropdown-item" href="#">Half Silk</a></li>
+                                  <li><a class="dropdown-item" href="#">Cotton</a></li>
+                                </ul>
+                              </li>
+                              <li><a class="dropdown-item" href="#">Cotton</a>
+                                <ul> 
+                                  <li>Plain Saree</li>
+                                  <li>Block Print</li>
+                                  <li>Vegetable Dye</li>
+                                  <li>Tie DYE</li>
+                              </ul> 
+                            </li>
+                          </ul>
+                        </div>
+                        
+                        
+                        <!-- Column 2 -->
+                        <div class="col-md-4">
+                          
+                          <!-- <h6 class="text-danger fw-bold">Salwar Kameez</h6> -->
+                          <ul> <li> <a class="dropdown-item" href="#">Moslin</a></li>
+                            <a class="dropdown-item" href="#">Cotton</a>
+                            <a class="dropdown-item" href="#">Silk</a>
+                            
+                            <h6 class="text-danger fw-bold mt-3"  > <a href="https://www.deshal.net/women/kurti" style="text-decoration: none;">Kurti</a></h6>
+                            <a class="dropdown-item" href="#">Frock</a>
+                            <a class="dropdown-item" href="#">Tops</a>
+                            <a class="dropdown-item" href="#">Kaftan</a>
+                          </div>
+                          
+                          <!-- Column 3 -->
+                          <div class="col-md-4">
+                            <h6 class="text-danger fw-bold">Pant</h6>
+                            <a class="dropdown-item" href="#">Harem Pant</a>
+                            <a class="dropdown-item" href="#">Leggings</a>
+                            
+                            <h6 class="text-danger fw-bold mt-3">Others</h6>
+                            <a class="dropdown-item" href="#">Orna</a>
+                            <a class="dropdown-item" href="#">Skirt</a>
+                            <a class="dropdown-item" href="#">T-Shirt</a>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  
+                  <!-- men -->
+                  <li class="nav-item dropdown position-static">
+                    <a class="nav-link dropdown-toggle fw-bold" data-bs-toggle="dropdown" href="#">Men</a>
+                    <div class="dropdown-menu w-100 mt-0 border-0 shadow">
+                      <div class="container py-4">
+                        <div class="row">
+                          
+                          <!-- Column 1 -->
+                          <div class="col-md-4">
+                            <h6 class="text-danger fw-bold">Panjabi</h6>
+                            <a class="dropdown-item" href="#">Shirt</a>
+                            <a class="dropdown-item" href="#">Cotton</a>
+                            <!-- <a class="dropdown-item" href="#">Jamdani</a>
+                            <a class="dropdown-item" href="#">Katan</a>
+                            <a class="dropdown-item" href="#">Cotton</a> -->
+                          </div>
+                          
+                          <!-- Column 2 -->
+                          <div class="col-md-4">
+                            <h6 class="text-danger fw-bold">Linen</h6>
+                            <a class="dropdown-item" href="#">T-shirt</a>
+                            <a class="dropdown-item" href="#">Fotua</a>
+                            
+                            <!-- <h6 class="text-danger fw-bold mt-3">Kurti</h6>
+                            <a class="dropdown-item" href="#">Frock</a>
+                            <a class="dropdown-item" href="#">Tops</a>
+                            <a class="dropdown-item" href="#">Kaftan</a> -->
+                          </div>
+                          
+                          <!-- Column 3 -->
+                          <div class="col-md-4">
+                            <h6 class="text-danger fw-bold">Pant</h6>
+                            <a class="dropdown-item" href="#">Harem Pant</a>
+                            <a class="dropdown-item" href="#">Leggings</a>
+                            
+                            <h6 class="text-danger fw-bold mt-3">Others</h6>
+                            <a class="dropdown-item" href="#">Orna</a>
+                            <a class="dropdown-item" href="#">Skirt</a>
+                            <a class="dropdown-item" href="#">T-Shirt</a>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </li>
+                  <li class="nav-item dropdown position-static">
                     <a class="nav-link dropdown-toggle fw-bold" href="#" 
                     data-bs-toggle="dropdown">Kids</a>
-            </li>
-            <li class="nav-item dropdown position-static">
+                    <div class="dropdown-menu w-100 mt-0 border-0 shadow">
+                      <div class="container py-4">
+                        <div class="row">
+                          
+                          <!-- Column 1 -->
+                          <div class="col-md-4">
+                            <h6 class="text-danger fw-bold">Saree</h6>
+                            <a class="dropdown-item" href="#">Moslin</a>
+                            <a class="dropdown-item" href="#">Silk</a>
+                            <a class="dropdown-item" href="#">Jamdani</a>
+                            <a class="dropdown-item" href="#">Katan</a>
+                            <a class="dropdown-item" href="#">Cotton</a>
+                          </div>
+                          
+                          <!-- Column 2 -->
+                          <div class="col-md-4">
+                            <h6 class="text-danger fw-bold">Salwar Kameez</h6>
+                            <a class="dropdown-item" href="#">Cotton</a>
+                            <a class="dropdown-item" href="#">Silk</a>
+                            
+                            <h6 class="text-danger fw-bold mt-3">Kurti</h6>
+                            <a class="dropdown-item" href="#">Frock</a>
+                            <a class="dropdown-item" href="#">Tops</a>
+                            <a class="dropdown-item" href="#">Kaftan</a>
+                          </div>
+                          
+                          <!-- Column 3 -->
+                          <div class="col-md-4">
+                            <h6 class="text-danger fw-bold">Pant</h6>
+                            <a class="dropdown-item" href="#">Harem Pant</a>
+                            <a class="dropdown-item" href="#">Leggings</a>
+                            
+                            <h6 class="text-danger fw-bold mt-3">Others</h6>
+                            <a class="dropdown-item" href="#">Orna</a>
+                            <a class="dropdown-item" href="#">Skirt</a>
+                            <a class="dropdown-item" href="#">T-Shirt</a>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="nav-item dropdown position-static">
               <a class="nav-link dropdown-toggle fw-bold" href="#" 
               data-bs-toggle="dropdown">Accessories</a>
-            </li>
-            <li class="nav-item dropdown position-static">
+              <div class="dropdown-menu w-100 mt-0 border-0 shadow">
+                <div class="container py-4">
+                  <div class="row">
+                    
+                    <!-- Column 1 -->
+                    <div class="col-md-4">
+                      <h6 class="text-danger fw-bold">Saree</h6>
+                            <a class="dropdown-item" href="#">Moslin</a>
+                            <a class="dropdown-item" href="#">Silk</a>
+                            <a class="dropdown-item" href="#">Jamdani</a>
+                            <a class="dropdown-item" href="#">Katan</a>
+                            <a class="dropdown-item" href="#">Cotton</a>
+                          </div>
+                          
+                          <!-- Column 2 -->
+                          <div class="col-md-4">
+                            <h6 class="text-danger fw-bold">Salwar Kameez</h6>
+                            <a class="dropdown-item" href="#">Cotton</a>
+                            <a class="dropdown-item" href="#">Silk</a>
+                            
+                            <h6 class="text-danger fw-bold mt-3">Kurti</h6>
+                            <a class="dropdown-item" href="#">Frock</a>
+                            <a class="dropdown-item" href="#">Tops</a>
+                            <a class="dropdown-item" href="#">Kaftan</a>
+                          </div>
+                          
+                          <!-- Column 3 -->
+                          <div class="col-md-4">
+                            <h6 class="text-danger fw-bold">Pant</h6>
+                            <a class="dropdown-item" href="#">Harem Pant</a>
+                            <a class="dropdown-item" href="#">Leggings</a>
+                            
+                            <h6 class="text-danger fw-bold mt-3">Others</h6>
+                            <a class="dropdown-item" href="#">Orna</a>
+                            <a class="dropdown-item" href="#">Skirt</a>
+                            <a class="dropdown-item" href="#">T-Shirt</a>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown position-static">
                     <a class="nav-link dropdown-toggle fw-bold" href="#" 
                     data-bs-toggle="dropdown">Home Decor</a>
-            </li>
-            <li class="nav-item dropdown position-static">
+                    <div class="dropdown-menu w-100 mt-0 border-0 shadow">
+                      <div class="container py-4">
+                        <div class="row">
+                          
+                          <!-- Column 1 -->
+                          <div class="col-md-4">
+                            <h6 class="text-danger fw-bold">Saree</h6>
+                            <a class="dropdown-item" href="#">Moslin</a>
+                            <a class="dropdown-item" href="#">Silk</a>
+                            <a class="dropdown-item" href="#">Jamdani</a>
+                            <a class="dropdown-item" href="#">Katan</a>
+                            <a class="dropdown-item" href="#">Cotton</a>
+                          </div>
+                          
+                          <!-- Column 2 -->
+                          <div class="col-md-4">
+                            <h6 class="text-danger fw-bold">Salwar Kameez</h6>
+                            <a class="dropdown-item" href="#">Cotton</a>
+                            <a class="dropdown-item" href="#">Silk</a>
+                            
+                            <h6 class="text-danger fw-bold mt-3">Kurti</h6>
+                            <a class="dropdown-item" href="#">Frock</a>
+                            <a class="dropdown-item" href="#">Tops</a>
+                            <a class="dropdown-item" href="#">Kaftan</a>
+                          </div>
+                          
+                          <!-- Column 3 -->
+                          <div class="col-md-4">
+                            <h6 class="text-danger fw-bold">Pant</h6>
+                            <a class="dropdown-item" href="#">Harem Pant</a>
+                            <a class="dropdown-item" href="#">Leggings</a>
+
+                            <h6 class="text-danger fw-bold mt-3">Others</h6>
+                            <a class="dropdown-item" href="#">Orna</a>
+                            <a class="dropdown-item" href="#">Skirt</a>
+                            <a class="dropdown-item" href="#">T-Shirt</a>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown position-static">
                     <a style="color: darkred;" class="nav-link dropdown-toggle fw-bold" href="#" 
                     data-bs-toggle="dropdown">NOYA</a>
-            </li>
-            <li class="nav-item dropdown position-static">
+                    <div class="dropdown-menu w-100 mt-0 border-0 shadow">
+                      <div class="container py-4">
+                        <div class="row">
+                          
+                          <!-- Column 1 -->
+                          <div class="col-md-4">
+                            <h6 class="text-danger fw-bold">Saree</h6>
+                            <a class="dropdown-item" href="#">Moslin</a>
+                            <a class="dropdown-item" href="#">Silk</a>
+                            <a class="dropdown-item" href="#">Jamdani</a>
+                            <a class="dropdown-item" href="#">Katan</a>
+                            <a class="dropdown-item" href="#">Cotton</a>
+                          </div>
+                          
+                          <!-- Column 2 -->
+                          <div class="col-md-4">
+                            <h6 class="text-danger fw-bold">Salwar Kameez</h6>
+                            <a class="dropdown-item" href="#">Cotton</a>
+                            <a class="dropdown-item" href="#">Silk</a>
+                            
+                            <h6 class="text-danger fw-bold mt-3">Kurti</h6>
+                            <a class="dropdown-item" href="#">Frock</a>
+                            <a class="dropdown-item" href="#">Tops</a>
+                            <a class="dropdown-item" href="#">Kaftan</a>
+                          </div>
+                          
+                          <!-- Column 3 -->
+                          <div class="col-md-4">
+                            <h6 class="text-danger fw-bold">Pant</h6>
+                            <a class="dropdown-item" href="#">Harem Pant</a>
+                            <a class="dropdown-item" href="#">Leggings</a>
+                            
+                            <h6 class="text-danger fw-bold mt-3">Others</h6>
+                            <a class="dropdown-item" href="#">Orna</a>
+                            <a class="dropdown-item" href="#">Skirt</a>
+                            <a class="dropdown-item" href="#">T-Shirt</a>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown position-static">
                     <a class="nav-link dropdown-toggle fw-bold" href="#" 
                     data-bs-toggle="dropdown">About Us</a>
-            </li>
-                              <li class="nav-item dropdown position-static">
+                    <div class="dropdown-menu w-100 mt-0 border-0 shadow">
+                      <div class="container py-4">
+                        <div class="row">
+                          
+                          <!-- Column 1 -->
+                          <div class="col-md-4">
+                            <h6 class="text-danger fw-bold">Saree</h6>
+                            <a class="dropdown-item" href="#">Moslin</a>
+                            <a class="dropdown-item" href="#">Silk</a>
+                            <a class="dropdown-item" href="#">Jamdani</a>
+                            <a class="dropdown-item" href="#">Katan</a>
+                            <a class="dropdown-item" href="#">Cotton</a>
+                          </div>
+                          
+                          <!-- Column 2 -->
+                          <div class="col-md-4">
+                            <h6 class="text-danger fw-bold">Salwar Kameez</h6>
+                            <a class="dropdown-item" href="#">Cotton</a>
+                            <a class="dropdown-item" href="#">Silk</a>
+                            
+                            <h6 class="text-danger fw-bold mt-3">Kurti</h6>
+                            <a class="dropdown-item" href="#">Frock</a>
+                            <a class="dropdown-item" href="#">Tops</a>
+                            <a class="dropdown-item" href="#">Kaftan</a>
+                          </div>
+                          
+                          <!-- Column 3 -->
+                          <div class="col-md-4">
+                            <h6 class="text-danger fw-bold">Pant</h6>
+                            <a class="dropdown-item" href="#">Harem Pant</a>
+                            <a class="dropdown-item" href="#">Leggings</a>
+                            
+                            <h6 class="text-danger fw-bold mt-3">Others</h6>
+                            <a class="dropdown-item" href="#">Orna</a>
+                            <a class="dropdown-item" href="#">Skirt</a>
+                            <a class="dropdown-item" href="#">T-Shirt</a>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown position-static">
               <a class="nav-link" href="#">
                 স্ব By Deshal
               </a>
             </li>
-
-        </ul>
             
-        <!-- section 2 (womens collums parts) -->
-        <div class="row" style="padding: 20px">
-            <!-- Card 1 -->
+            
+            <!-- <li class="nav-item dropdown">
+              <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >
+              Collection
+            </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li> -->
+            
+            
+            
+            
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li> -->
+          </ul>
+          <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+  </div>
+    
+    <!-- <div>
+      <img
+        style="width: 100%; height: auto"
+        src="pictures/Deshal-cover1.jpeg"
+        alt=""
+      />
+    </div> -->
+
+    <div class="row" style="padding: 20px">
+      <!-- Card 1 -->
       <div class="col-4">
         <div class="category-card position-relative text-center">
           <div
             class="category-content position-absolute bottom-0 start-50 translate-middle-x mb-3"
           >
-            <h5 class="category-title">Kurta</h5>
+            <h5 class="category-title">SAREE</h5>
             <a href="#" class="btn btn-primary btn-sm">View Products</a>
           </div>
           <img
-            src="pictures/crad-pic1.jpg"
+            src="pictures/women-prt-pic-1.jpg"
             class="img-fluid w-100"
             alt="category"
           />
@@ -204,11 +635,11 @@
           <div
             class="category-content position-absolute bottom-0 start-50 translate-middle-x mb-3"
           >
-            <h5 class="category-title">Panjabi</h5>
+            <h5 class="category-title">TOPS</h5>
             <a href="#" class="btn btn-primary btn-sm">View Products</a>
           </div>
           <img
-            src="pictures/crad-pic2.jpg"
+            src="pictures/women-prt-pic-2.jpg"
             class="img-fluid w-100"
             alt="category"
           />
@@ -221,11 +652,122 @@
           <div
             class="category-content position-absolute bottom-0 start-50 translate-middle-x mb-3"
           >
-            <h5 class="category-title">Kids</h5>
+            <h5 class="category-title">KURTI</h5>
             <a href="#" class="btn btn-primary btn-sm">View Products</a>
           </div>
           <img
-            src="pictures/card-pic3.jpg"
+            src="pictures/women-prt-pic3.jpg"
+            class="img-fluid w-100"
+            alt="category"
+          />
+        </div>
+      </div>
+    </div>
+      
+    <!-- second row(col) -->
+    <div class="row" style="padding: 20px">
+      <!-- Card 1 -->
+      <div class="col-4">
+        <div class="category-card position-relative text-center">
+          <div
+            class="category-content position-absolute bottom-0 start-50 translate-middle-x mb-3"
+          >
+            <h5 class="category-title">SALWAR KAMEEZ</h5>
+            <a href="#" class="btn btn-primary btn-sm">View Products</a>
+          </div>
+          <img
+            src="pictures/women-prt-pic4.jpg"
+            class="img-fluid w-100"
+            alt="category"
+          />
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-4">
+        <div class="category-card position-relative text-center">
+          <div
+            class="category-content position-absolute bottom-0 start-50 translate-middle-x mb-3"
+          >
+            <h5 class="category-title">PONCHO</h5>
+            <a href="#" class="btn btn-primary btn-sm">View Products</a>
+          </div>
+          <img
+            src="pictures/women-prt-pic5.jpg"
+            class="img-fluid w-100"
+            alt="category"
+          />
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-4">
+        <div class="category-card position-relative text-center">
+          <div
+            class="category-content position-absolute bottom-0 start-50 translate-middle-x mb-3"
+          >
+            <h5 class="category-title">BLOUSE</h5>
+            <a href="#" class="btn btn-primary btn-sm">View Products</a>
+          </div>
+          <img
+            src="pictures/w-prt-pic6.jpg"
+            class="img-fluid w-100"
+            alt="category"
+          />
+        </div>
+      </div>
+    </div>
+      
+
+
+
+    <!-- THIRD ROW(COL) -->
+<div class="row" style="padding: 20px">
+      <!-- Card 1 -->
+      <div class="col-4">
+        <div class="category-card position-relative text-center">
+          <div
+            class="category-content position-absolute bottom-0 start-50 translate-middle-x mb-3"
+          >
+            <h5 class="category-title">ORNA</h5>
+            <a href="#" class="btn btn-primary btn-sm">View Products</a>
+          </div>
+          <img
+            src="pictures/Women-orna.jpg"
+            class="img-fluid w-100"
+            alt="category"
+          />
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-4">
+        <div class="category-card position-relative text-center">
+          <div
+            class="category-content position-absolute bottom-0 start-50 translate-middle-x mb-3"
+          >
+            <h5 class="category-title">SKIRT</h5>
+            <a href="#" class="btn btn-primary btn-sm">View Products</a>
+          </div>
+          <img
+            src="pictures/women-skirt.jpg"
+            class="img-fluid w-100"
+            alt="category"
+          />
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-4">
+        <div class="category-card position-relative text-center">
+          <div
+            class="category-content position-absolute bottom-0 start-50 translate-middle-x mb-3"
+          >
+            <h5 class="category-title">PANT</h5>
+            <a href="#" class="btn btn-primary btn-sm">View Products</a>
+          </div>
+          <img
+            src="pictures/women-pant.jpg"
             class="img-fluid w-100"
             alt="category"
           />
@@ -233,5 +775,394 @@
       </div>
     </div>
 
-</body>
+      
+<!-- fourth row(cols) -->
+ <div class="row" style="padding: 20px">
+      <!-- Card 1 -->
+      <div class="col-4">
+        <div class="category-card position-relative text-center">
+          <div
+            class="category-content position-absolute bottom-0 start-50 translate-middle-x mb-3"
+          >
+            <h5 class="category-title">T_SHIRT</h5>
+            <a href="#" class="btn btn-primary btn-sm">View Products</a>
+          </div>
+          <img
+            src="pictures/Women-t-shirt.jpg"
+            class="img-fluid w-100"
+            alt="category"
+          />
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-4">
+        <div class="category-card position-relative text-center">
+          <div
+            class="category-content position-absolute bottom-0 start-50 translate-middle-x mb-3"
+          >
+            <h5 class="category-title">SHAWL</h5>
+            <a href="#" class="btn btn-primary btn-sm">View Products</a>
+          </div>
+          <img
+            src="pictures/women-Shawl.jpg"
+            class="img-fluid w-100"
+            alt="category"
+          />
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-4">
+        <div class="category-card position-relative text-center">
+          <div
+            class="category-content position-absolute bottom-0 start-50 translate-middle-x mb-3"
+          >
+            <h5 class="category-title">FROCK</h5>
+            <a href="#" class="btn btn-primary btn-sm">View Products</a>
+          </div>
+          <img
+            src="pictures/women-Frock.jpg"
+            class="img-fluid w-100"
+            alt="category"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- FIFTH ROW(COLS) -->
+     <div class="row" style="padding: 20px">
+      <!-- Card 1 -->
+      <div class="col-4">
+        <div class="category-card position-relative text-center">
+          <div
+            class="category-content position-absolute bottom-0 start-50 translate-middle-x mb-3"
+          >
+            <h5 class="category-title">ORNA</h5>
+            <a href="#" class="btn btn-primary btn-sm">View Products</a>
+          </div>
+          <img
+            src="pictures/Women-orna.jpg"
+            class="img-fluid w-100"
+            alt="category"
+          />
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-4">
+        <div class="category-card position-relative text-center">
+          <div
+            class="category-content position-absolute bottom-0 start-50 translate-middle-x mb-3"
+          >
+            <h5 class="category-title">SKIRT</h5>
+            <a href="#" class="btn btn-primary btn-sm">View Products</a>
+          </div>
+          <img
+            src="pictures/women-skirt.jpg"
+            class="img-fluid w-100"
+            alt="category"
+          />
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-4">
+        <div class="category-card position-relative text-center">
+          <div
+            class="category-content position-absolute bottom-0 start-50 translate-middle-x mb-3"
+          >
+            <h5 class="category-title">PANT</h5>
+            <a href="#" class="btn btn-primary btn-sm">View Products</a>
+          </div>
+          <img
+            src="pictures/women-pant.jpg"
+            class="img-fluid w-100"
+            alt="category"
+          />
+        </div>
+      </div>
+    </div>
+
+      
+<!-- fourth row(cols) -->
+ <div class="row" style="padding: 20px">
+      <!-- Card 1 -->
+      <div class="col-4">
+        <div class="category-card position-relative text-center">
+          <div
+            class="category-content position-absolute bottom-0 start-50 translate-middle-x mb-3"
+          >
+            <h5 class="category-title">TWO PIECE</h5>
+            <a href="#" class="btn btn-primary btn-sm">View Products</a>
+          </div>
+          <img
+            src="pictures/women-2-piece.jpg"
+            class="img-fluid w-100"
+            alt="category"
+          />
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-4">
+        <div class="category-card position-relative text-center">
+          <div
+            class="category-content position-absolute bottom-0 start-50 translate-middle-x mb-3"
+          >
+            <h5 class="category-title">KAFTAN</h5>
+            <a href="#" class="btn btn-primary btn-sm">View Products</a>
+          </div>
+          <img
+            src="pictures/Kaftan.jpg"
+            class="img-fluid w-100"
+            alt="category"
+          />
+        </div>
+      </div>
+
+
+   
+<!-- carusels part -->
+
+<!-- <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button class="" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="pictures/cover-3.webp" class="d-block w-100" alt="...">
+            <div class="category-content">
+              
+              <a href="#"   class="btn btn-danger btn-sm">View Products</a>
+            </div>
+    </div>
+    <div class="carousel-item">
+      <img src="pictures/cover-4.webp" class="d-block w-100" alt="...">
+            <div class="category-content">
+              
+              <a href="#" class="btn btn-danger btn-sm">View Products</a>
+            </div>
+    </div>
+    <div class="carousel-item">
+      <img src="pictures/cover-5.webp" class="d-block w-100" alt="...">
+            <div class="category-content">
+              
+              <a href="#" class="btn btn-danger btn-sm">View Products</a>
+            </div>
+    </div>
+    <div class="carousel-item">
+      <img src="pictures/cover-6.webp" class="d-block w-100" alt="...">
+            <div class="category-content">
+              
+              <a href="#" class="btn btn-danger btn-sm">View Products</a>
+            </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div> -->
+
+<!-- site-vdo-part -->
+    <!-- <div class="video-background  position-relative text-center" style="width: 100% !important; height: 100vh;">
+  <iframe 
+    src="https://www.youtube.com/embed/b88e5XRlcW8" title="দেশাল-এর ঈদ কালেকশন" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    frameborder="0"
+    allow="autoplay; fullscreen"
+    allowfullscreen>
+  </iframe>
+</div> -->
+
+
+    <!-- footer part -->
+    <hr
+      class="hr"
+      style="
+        width: 100%;
+        height: 3px;
+        margin-top: 10px;
+        border: 1px solid rgb(122, 121, 120);
+        background-color: rgb(122, 121, 120);
+        display: block;
+      "
+    />
+    <div class="container-fluid">
+      
+      
+      <div class="row">
+        <h3
+          class="text-center align-items-center pt-6"
+          style="
+            color: rgb(160, 10, 40);
+            margin-top: -10px;
+            font-size: 25px;
+            padding: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+          "
+        >
+          Handcrafted ethnic luxury clothing inspired by bengali nostalgia and
+          mythology
+        </h3>
+      </div>
+      <div class="row">
+        <hr
+          class="hr"
+          style="
+            width: 80%;
+            height: 5px;
+            margin: auto;
+            border: 1px solid rgb(122, 121, 120);
+            background-color: rgb(122, 121, 120);
+            display: block;
+          "
+        />
+      </div>
+    </div>
+
+    <!-- footer er row > col-->
+
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-4 text-center">
+          <p>
+            <a href="#" style="font-size: 20px;" class="fw-bold link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+              About us
+            </a> 
+          </p>
+
+          <p >
+            <a
+              href="#" 
+              class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+              >Brand Profile
+            </a>
+          </p>
+
+          <p>
+            <a
+              href="#"
+              class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+              >outlet location</a
+            >
+          </p>
+
+          <p>
+            <a
+              href="#"
+              class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+              >contact us</a
+            >
+          </p>
+        </div>
+
+
+        <!-- 2nd col -->
+        <div class="col-4 text-center">
+          <p>
+            <a
+              href="#"  style="font-size: 20px"
+              class="fw-bold link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >Policies</a
+            >
+          </p>
+          <p>
+            <a
+              href="#"
+              class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+              >Polivacy Policy
+            </a>
+          </p>
+
+          <p>
+            <a
+              href="#"
+              class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+              >Terms And Conditions</a
+            >
+          </p>
+
+          
+        </div>
+
+
+        <!-- 3rd col -->
+        <div class="col-4 text-center">
+          <p>
+            <a
+              href="#"  style="font-size: 20px"
+              class="fw-bold link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >Policies</a
+            >
+          </p>
+          <p>
+            <a
+              href="#"
+              class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+              >Shipping Policy
+            </a>
+          </p>
+
+          
+
+          <p>
+            <a
+              href="#"
+              class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+              >Exchange Policy</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- footer row>col 2 -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <h4
+          class="text-center align-items-center pt-6"
+          style="
+            color: rgb(16, 3, 6);
+            margin-top: -10px;
+            font-size: 25px;
+            padding: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+          "
+        >
+          Follow us for latest updates
+        </h4> 
+        <div class="d-flex justify-content-center align-items-center gap-4">
+          <i class="bi bi-facebook " style="font-size: 25px;"></i>
+          <i class="bi bi-instagram" style="font-size: 25px;"></i>
+          <i class="bi bi-youtube" style="font-size: 25px;"></i>
+      </div>
+      </div> 
+
+
+
+
+      <!-- footer row > col 3 -->
+      <footer style="background-color: hsl(353.79 81.308% 41.961% / 1);">
+        <p style="text-align: center; margin: 15px; padding: 15px; color: white; ">© 2023 - All right reserved | Designed & Developed by Team Zoetrone | privacy policy & cookies | terms & conditions</p>
+      </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
