@@ -22,6 +22,9 @@
   font-size: 30px;
   color: white;
 }
+.row{
+  margin:0 auto;
+}
 
 .category-content .btn {
   font-size: 15px;
